@@ -1,4 +1,4 @@
-﻿Shader "Custom/MergedButterfly"
+﻿Shader "Custom/TargetButterfly"
 {
     Properties
     {
