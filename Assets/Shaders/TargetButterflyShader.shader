@@ -30,7 +30,7 @@
         half _Glossiness;
         half _Metallic;
         fixed4 _Color;
-		float inputButterflyColors[4 * 10];
+		float inputButterflyColors[3 * 10];
 		int numberOfInputButterflies;
 
         // Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
@@ -50,9 +50,9 @@
             fixed sampledRedColor = tex2D( _MainTex, IN.uv_MainTex ).r;
 			int patternIndex = int( sampledRedColor * 255 / 15 ) ;
             patternIndex = clamp( patternIndex, 0, numberOfInputButterflies );
-			o.Albedo = fixed3( inputButterflyColors[ patternIndex * 4 + 0 ],
-							   inputButterflyColors[ patternIndex * 4 + 1 ],
-							   inputButterflyColors[ patternIndex * 4 + 2 ] );
+			o.Albedo = fixed3( inputButterflyColors[ patternIndex * 3 + 0 ],
+							   inputButterflyColors[ patternIndex * 3 + 1 ],
+							   inputButterflyColors[ patternIndex * 3 + 2 ] );
 			if( patternIndex < 0 )
                 o.Alpha = 0;
             else

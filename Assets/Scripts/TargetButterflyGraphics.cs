@@ -32,7 +32,7 @@ public class TargetButterflyGraphics : MonoBehaviour
             wingsRenderer.GetPropertyBlock( wingsMaterialPropertyBlock, 0 ); // Don't care about the 2nd material of wings.
             wingsMaterialPropertyBlock.SetTexture( "_MainTex", patternImage );
             // Array sizes are determined the first time they are set, so set it to max beforehand.
-            wingsMaterialPropertyBlock.SetFloatArray( inputButterflyColorsShaderID, new float[ 4 * 10 ] );
+            wingsMaterialPropertyBlock.SetFloatArray( inputButterflyColorsShaderID, new float[ 3 * 10 ] );
             wingsRenderer.SetPropertyBlock( wingsMaterialPropertyBlock, 0 ); // Don't care about the 2nd material of wings.
         }
     }
@@ -48,7 +48,7 @@ public class TargetButterflyGraphics : MonoBehaviour
         wingsRenderer.GetPropertyBlock( wingsMaterialPropertyBlock, 0 ); // Don't care about the 2nd material of wings.
         wingsMaterialPropertyBlock.SetFloatArray( inputButterflyColorsShaderID, 
                                                   inputButterflies.Select( bfGraphics => bfGraphics.GetColor() )
-                                                                  .SelectMany( color => new[] { color.r, color.g, color.b, color.a } )
+                                                                  .SelectMany( color => new[] { color.r, color.g, color.b } )
                                                                   .ToArray() );
         wingsMaterialPropertyBlock.SetInt( numberOfInputButterfliesShaderID, inputButterflies.Count );
         wingsRenderer.SetPropertyBlock( wingsMaterialPropertyBlock, 0 ); // Don't care about the 2nd material of wings.
