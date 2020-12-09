@@ -965,7 +965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92e625d76a489bd4384fb14a2cbdf5b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patternImage: {fileID: 2800000, guid: 47f9c51fc9dcfe44da67b01fb82db956, type: 3}
+  patternImage: {fileID: 2800000, guid: 85440d506e335094d9a81f6902aa69cc, type: 3}
   inputButterflies:
   - {fileID: 919132147879861393}
   - {fileID: 746636842}
