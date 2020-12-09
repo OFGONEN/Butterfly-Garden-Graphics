@@ -1403,7 +1403,7 @@ PrefabInstance:
     - target: {fileID: 6250707906273205738, guid: 886abc88e322ffc49b925da65ef35ae5, type: 3}
       propertyPath: patternImage
       value: 
-      objectReference: {fileID: 2800000, guid: 47f9c51fc9dcfe44da67b01fb82db956, type: 3}
+      objectReference: {fileID: 2800000, guid: 85440d506e335094d9a81f6902aa69cc, type: 3}
     - target: {fileID: 6250707906273205738, guid: 886abc88e322ffc49b925da65ef35ae5, type: 3}
       propertyPath: inputButterflies.Array.size
       value: 3
