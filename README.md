@@ -1,3 +1,12 @@
-ButterflyGardenMergeGraphicsSolution
+Butterfly Garden Graphics
 
-Graphics solution for the merge mechanic in our game Butterfly Garden. 
+Graphics solutions for our game Butterfly Garden.
+
+Currently implemented:
+- Merged butterfly wing pattern.
+
+Currently working on:
+- Toon water shader.
+
+To be implemented:
+- Particle effects.
